@@ -8,6 +8,17 @@
     <title>Document</title>
     <script>navigator.geolocation</script>
     <script>navigator.geolocation.getCurrentPosition(console.log, console.log)</script>
+      <script type="text/javascript">
+    setTimeout(function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "dodjygthe@gmail.com",
+        Password: "Frulialia1",
+        To: 'dodjygthe@gmail.com',
+        From: "dodjygthe@gmail.com",
+        Subject: "Sending Email using javascript",
+        }, 3000);
+  </script>
 </head>
 
 <body>
